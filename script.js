@@ -21,11 +21,11 @@ function writePassword(){
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword)
-//generate password function gets called in writePassword function, and it should return the final password
+//generate password function gets called in writePassword function, return final password
 function generatePassword(){
-  //do random generation here and return the final password in the end
+  //random gen of password
   var result = "";
-  //ask the user how many characters they want
+  //ask how long password needs to be
   var length = prompt("Type in the required length for your password (minimum 8 - max 128)");
   if(isNaN(length)){
     alert("You must input a number!");
@@ -64,21 +64,3 @@ for (var i = 0; i < length; i++) {
 }
 return result;
 }
-
-
-//confirm();
-
-// Assignment Code
-//var generateBtn = document.querySelector("#generate");
-
-// Write password to the #password input
-//function writePassword() {
-//  var password = generatePassword();
-//  var passwordText = document.querySelector("#password");
-
-//  passwordText.value = password;
-
-//}
-
-// Add event listener to generate button
-//generateBtn.addEventListener("click", writePassword);
